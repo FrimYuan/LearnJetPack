@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--<data class="MyDataBinding">-->
+    <data>
+
+        <import type="com.frimyuan.databinding.bean.User" />
+
+        <import type="android.view.View" />
+        <!-- <import type="com.frimyuan.databinding.bean2.User" alias="User2"/>-->
+        <variable
+            name="user"
+            type="User" />
+        <!--   <variable
+                    name="user2"
+                    type="User2" />-->
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.name,default=defaultValue}" />
+
+        <TextView
+            android:id="@+id/tv_user_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.password}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{user.student?"学生":"其他",default="老师"}' />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="@{user.student?View.VISIBLE:View.GONE}" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:imageUrl="@{user.imageUrl}" />
+    </LinearLayout>
+</layout>
