@@ -1,12 +1,17 @@
 package com.frimyuan.databinding.bean2;
 
+import android.databinding.BaseObservable;
+import android.databinding.Bindable;
+
 /**
  * @author YuanGang
  * @date 2019/4/17.
  * description：
  */
-public class User {
+public class User extends BaseObservable {
+    @Bindable
     private String name;
+    @Bindable
     private String password;
 
     public User(String name, String password) {

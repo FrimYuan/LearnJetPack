@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
 
     </data>
 
@@ -15,9 +15,24 @@
 
         <Button
             android:id="@+id/part1"
-            android:text="基本使用"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="jumpPart1"
+            android:text="基本使用" />
+
+        <Button
+            android:id="@+id/part3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="jumpPart3"
+            android:text="研究ObservableField" />
+
+        <Button
+            android:id="@+id/part4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="jumpPart4"
+            android:text="在RecyclerView中使用" />
 
     </LinearLayout>
 </layout>

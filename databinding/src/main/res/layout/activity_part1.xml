@@ -9,13 +9,30 @@
         <import type="com.frimyuan.databinding.bean.User" />
 
         <import type="android.view.View" />
-        <!-- <import type="com.frimyuan.databinding.bean2.User" alias="User2"/>-->
+
+        <import type="com.frimyuan.databinding.part1.Part1Activity" />
+
+        <import type="com.frimyuan.databinding.part1.Part1Activity.MyClick" />
+
+        <import
+            alias="User2"
+            type="com.frimyuan.databinding.bean2.User" />
+
         <variable
             name="user"
             type="User" />
-        <!--   <variable
-                    name="user2"
-                    type="User2" />-->
+
+        <variable
+            name="user2"
+            type="User2" />
+
+        <variable
+            name="part1"
+            type="Part1Activity" />
+
+        <variable
+            name="myClick"
+            type="MyClick" />
     </data>
 
     <LinearLayout
@@ -28,14 +45,16 @@
         <TextView
             android:id="@+id/tv_user_name"
             android:layout_width="wrap_content"
+            android:onClick="@{myClick.click1}"
             android:layout_height="wrap_content"
-            android:text="@{user.name,default=defaultValue}" />
+            android:text="@{user2.name,default=defaultValue}" />
 
         <TextView
             android:id="@+id/tv_user_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{user.password}" />
+            android:onClick="@{myClick.click2}"
+            android:text="@{user2.password}" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -51,6 +70,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="@{myClick.click1}"
             android:scaleType="fitXY"
             app:imageUrl="@{user.imageUrl}" />
     </LinearLayout>
