@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.frimyuan.lifecycle.databinding.ActivityMainBinding;
 import com.frimyuan.lifecycle.lifecycle.LifeCycleActivity;
+import com.frimyuan.lifecycle.viewmodel.ViewModelActivity;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding activityMainBinding;
@@ -24,5 +25,11 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, LifeCycleActivity.class);
             startActivity(intent);
         }
+
+        public void jump2(View view) {
+            Intent intent = new Intent(MainActivity.this, ViewModelActivity.class);
+            startActivity(intent);
+        }
+
     }
 }

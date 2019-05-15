@@ -22,5 +22,12 @@
             android:text="学习lifecycle"
             android:textAllCaps="false" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{myclick.jump2}"
+            android:text="学习ViewModel"
+            android:textAllCaps="false" />
+
     </LinearLayout>
 </layout>
