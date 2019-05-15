@@ -34,5 +34,12 @@
             android:onClick="jumpPart4"
             android:text="在RecyclerView中使用" />
 
+        <Button
+            android:id="@+id/part5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="jumpPart5"
+            android:text="数据绑定" />
+
     </LinearLayout>
 </layout>

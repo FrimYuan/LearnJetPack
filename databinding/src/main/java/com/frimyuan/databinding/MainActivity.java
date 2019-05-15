@@ -11,6 +11,7 @@ import com.frimyuan.databinding.databinding.ActivityMainBinding;
 import com.frimyuan.databinding.part1.Part1Activity;
 import com.frimyuan.databinding.part3.Part3Activity;
 import com.frimyuan.databinding.part4.Part4Activity;
+import com.frimyuan.databinding.part5.Part5Activity;
 
 public class MainActivity extends AppCompatActivity {
     private Context mContext;
@@ -35,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void jumpPart4(View view) {
         Intent intent = new Intent(mContext, Part4Activity.class);
+        startActivity(intent);
+    }
+
+    public void jumpPart5(View view) {
+        Intent intent = new Intent(mContext, Part5Activity.class);
         startActivity(intent);
     }
 }

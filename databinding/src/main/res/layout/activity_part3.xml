@@ -5,13 +5,28 @@
     <data>
 
         <variable
-            name="user"
+            name="user2"
             type="com.frimyuan.databinding.bean.User2" />
 
-        <variable
-            name="part3Activity"
-            type="com.frimyuan.databinding.part3.Part3Activity" />
+        <import type="android.databinding.ObservableList" />
 
+        <import type="android.databinding.ObservableMap" />
+
+        <variable
+            name="list"
+            type="ObservableList&lt;com.frimyuan.databinding.bean.User&gt;" />
+
+        <variable
+            name="map"
+            type="ObservableMap&lt;String,com.frimyuan.databinding.bean.User&gt;" />
+
+        <variable
+            name="index"
+            type="int" />
+
+        <variable
+            name="key"
+            type="String" />
     </data>
 
     <LinearLayout
@@ -23,30 +38,30 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{user.firstName}" />
+            android:text="@{user2.firstName}" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{user.lastName}" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="changeText"
-            android:text="@{part3Activity.name}" />
+            android:text="@{user2.lastName}" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="changeText"
-            android:text="@{part3Activity.users[0].name}" />
+            android:text="@{user2.lastName}" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="changeText"
-            android:text='@{part3Activity.arrayMap["first"].name}' />
+            android:text="@{list[index].name}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeText"
+            android:text='@{map[key].password}' />
 
 
     </LinearLayout>

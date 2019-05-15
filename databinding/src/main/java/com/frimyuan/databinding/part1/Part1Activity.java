@@ -54,6 +54,10 @@ public class Part1Activity extends AppCompatActivity {
             user.setPassword("我是新密码");
             user.notifyChange();
         }
+
+        public void receiveData(User user){
+            Log.d(TAG, "receiveData "+user);
+        }
     }
 
 }
