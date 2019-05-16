@@ -1,5 +1,6 @@
 package com.frimyuan.lifecycle.viewmodel;
 
+import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
@@ -11,18 +12,16 @@ import com.frimyuan.lifecycle.viewmodel.bean.User;
  * description：
  */
 public class UserModel extends ViewModel {
-    public final MutableLiveData<User> mUserMutableLiveData = new MutableLiveData<>();
+    public MutableLiveData<User> mUserMutableLiveData;
 
-    public UserModel() {
-        mUserMutableLiveData.postValue(new User("大锦鲤", "123456"));
+    public LiveData<User> getUserLiveData() {
+        if (mUserMutableLiveData == null) {
+            mUserMutableLiveData = new MutableLiveData<>();
+        }
+        return mUserMutableLiveData;
     }
 
-    public void doSomething() {
-        User user = mUserMutableLiveData.getValue();
-        if (user != null) {
-            user.name = "FrimYuan";
-            user.password = "456789";
-            mUserMutableLiveData.setValue(user);
-        }
+    public void doSomething(User user) {
+        mUserMutableLiveData.postValue(user);
     }
 }
