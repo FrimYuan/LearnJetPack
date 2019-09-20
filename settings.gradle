@@ -1,1 +1,1 @@
-include ':app', ':databinding', ':lifecycle'
+include ':app', ':databinding', ':lifecycle', ':demo'

@@ -19,6 +19,7 @@ public class ViewModelActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         ActivityViewModelBinding activityViewModelBinding = DataBindingUtil.setContentView(this, R.layout.activity_view_model);
         userModel = ViewModelProviders.of(this).get(UserModel.class);
         userModel.getUserLiveData().observe(this, new Observer<User>() {
