@@ -1,8 +1,8 @@
 package com.frimyuan.databinding.bean;
 
-import android.databinding.ObservableBoolean;
-import android.databinding.ObservableField;
-import android.databinding.ObservableInt;
+import androidx.databinding.ObservableBoolean;
+import androidx.databinding.ObservableField;
+import androidx.databinding.ObservableInt;
 
 /**
  * @author YuanGang

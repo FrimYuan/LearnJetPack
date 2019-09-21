@@ -1,14 +1,15 @@
 package com.frimyuan.databinding.part3;
 
-import android.databinding.DataBindingUtil;
-import android.databinding.ObservableArrayList;
-import android.databinding.ObservableArrayMap;
-import android.databinding.ObservableField;
-import android.databinding.ObservableList;
-import android.databinding.ObservableMap;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ObservableArrayList;
+import androidx.databinding.ObservableArrayMap;
+import androidx.databinding.ObservableField;
+import androidx.databinding.ObservableList;
+import androidx.databinding.ObservableMap;
 
 import com.frimyuan.databinding.R;
 import com.frimyuan.databinding.bean.User;

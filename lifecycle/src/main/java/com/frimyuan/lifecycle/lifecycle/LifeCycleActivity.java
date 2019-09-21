@@ -1,7 +1,8 @@
 package com.frimyuan.lifecycle.lifecycle;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.frimyuan.lifecycle.R;
 

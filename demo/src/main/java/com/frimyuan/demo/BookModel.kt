@@ -8,7 +8,8 @@ import androidx.lifecycle.ViewModel
  * @date 2019/9/18.
  * description：
  */
-class BookModel constructor(private val bookRepository: BookRepository) : ViewModel() {
+class BookModel(private val bookRepository: BookRepository) : ViewModel() {
+
     val book = MutableLiveData<String>()
 
     fun setData(num: String) {
@@ -16,7 +17,6 @@ class BookModel constructor(private val bookRepository: BookRepository) : ViewMo
     }
 
     fun getData() {
-//        book.value = bookRepository.getData()
         book.postValue(bookRepository.getData())
     }
 }

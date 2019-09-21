@@ -1,12 +1,13 @@
 package com.frimyuan.databinding.part1;
 
-import android.databinding.BindingAdapter;
-import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.BindingAdapter;
+import androidx.databinding.DataBindingUtil;
 
 import com.bumptech.glide.Glide;
 import com.frimyuan.databinding.BR;

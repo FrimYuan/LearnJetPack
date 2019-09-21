@@ -1,8 +1,9 @@
 package com.frimyuan.databinding.part4;
 
-import android.databinding.ObservableArrayList;
-import android.databinding.ObservableField;
-import android.databinding.ObservableInt;
+
+import androidx.databinding.ObservableArrayList;
+import androidx.databinding.ObservableField;
+import androidx.databinding.ObservableInt;
 
 /**
  * @author YuanGang

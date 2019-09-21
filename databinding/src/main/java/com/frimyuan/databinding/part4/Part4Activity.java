@@ -1,9 +1,10 @@
 package com.frimyuan.databinding.part4;
 
-import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.frimyuan.databinding.R;
 import com.frimyuan.databinding.databinding.ActivityPart4Binding;

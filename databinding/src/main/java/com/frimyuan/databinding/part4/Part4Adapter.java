@@ -1,9 +1,10 @@
 package com.frimyuan.databinding.part4;
 
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.frimyuan.databinding.databinding.ItemViewBinding;
 
